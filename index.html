@@ -15,30 +15,48 @@
             height: 50px;
             width: 100px;
         }
+
+        @media screen and (max-width:576px) {
+            #com img {
+                height: 40px;
+                width: 40px;
+                margin: 5px;
+            }
+
+            section #working {
+                height: 100%;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg m-3">
+        <nav class="navbar navbar-expand-lg p-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Pro Edu</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="#" style="color:#4a4a4a; font-size: 2rem;"> Pro Edu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-items-even" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll p-3"
-                        style="--bs-scroll-height: 100px;">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: #777;">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
+                            <a class="nav-link" href="#"> Courses </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Link</a>
+                            <a class="nav-link" style="color: #777;">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #777;">Success</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #777;">About</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -212,10 +230,10 @@
 
         <section class="container" style="background-color: #f4fafd; margin-bottom: 50px;">
             <div class="row">
-                <div class="col col-lg-6 col-md-12 col-sm-12">
-                    <img src="img/working.png" alt="" class="img-fluid ">
+                <div class="col ">
+                    <img src="img/working.png" alt="" class="img-fluid" id="working">
                 </div>
-                <div class="col col-lg-6 col-md-12 col-sm-12">
+                <div class="col">
                     <h1> Explore The elearning
                         Institute </h1>
                     <p> There are many variations of passages of Lorem Ipsum available, but the
